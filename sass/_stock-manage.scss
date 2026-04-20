@@ -1,0 +1,115 @@
+@use 'variables';
+
+.stock-card {
+    background-color: variables.$White;
+    padding: 32px;
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    
+    &_title {
+        color: variables.$Very-dark-blue;
+        margin-bottom: 24px;
+        text-align: center;
+    } 
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    label {
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: variables.$Dark-grayish-blue;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    input {
+        padding: 14px 16px;
+        border: 2px solid variables.$Light-grayish-blue;
+        border-radius: 8px;
+        font-family: variables.$font;
+        font-size: 1rem;
+        color: variables.$Very-dark-blue;
+        outline: none;
+        transition: all 0.2s ease-in-out;
+
+        &::placeholder {
+            color: variables.$Grayish-blue;
+        }
+
+        &:focus {
+            border-color: variables.$Orange;
+            background-color: variables.$White;
+        }
+    }
+}
+
+.form-check {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+
+    p{
+        
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: variables.$Dark-grayish-blue;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    input[type="radio"] {
+        margin: 0;
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+    }
+
+    label {
+        font-weight: 700;
+        color: variables.$Very-dark-blue;
+        font-size: 1rem;
+        cursor: pointer;
+        text-transform: none;
+        letter-spacing: normal;
+    }
+
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+.btn{
+    flex: 1;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: variables.$Orange;
+    color: variables.$White;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(255, 125, 26, 0.25);
+    transition: opacity 0.2s, transform 0.1s;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &:active {
+        transform: translateY(2px);
+    }
+}

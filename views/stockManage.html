@@ -1,0 +1,45 @@
+<section class="stock-card">
+    <h1 class="stock-card_title">Create or Search product</h1>
+    <form id="manage-form" class="manage-form">
+            <div class="form-group">
+                <label for="stockID">Stock ID</label>
+                <input type="text" id="stockID" name="lpa_stock_ID" placeholder='Stock ID' required>
+            </div>
+
+            <div class="form-group">
+                <label for="stockName">Stock Item Name</label>
+                <input type="text" id="stockName" name="lpa_stock_name" placeholder='Stock Name' required>
+            </div>
+
+            <div class="form-group">
+                <label for="stockDescription">Description</label>
+                <input type="text" id="stockDescription" name="lpa_stock_desc" placeholder='Description' required>
+            </div>
+
+            <div class="form-group">
+                <label for="onHand">On-hand</label>
+                <input type="text" id="onHand" name="lpa_stock_onhand" placeholder='On hand?' required>
+            </div>
+
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="text" id="price" name="lpa_stock_price" placeholder='Prie' required>
+            </div>
+
+            <div class="form-check">
+                <p>Status</p>
+                <input type="radio" id="enabled" name="lpa_stock_status" value="1" required>
+                <label for="enabled">Enabled</label>
+                <input type="radio" id="disabled" name="lpa_stock_status" value="0" required>
+                <label for="disabled">Disabled</label>
+            </div>
+            <div class="buttons">
+            <button id="save" type="button" class="btn">Save</button>
+            <button id="close" type="button" class="btn">Close</button>
+            <button id="search" type="button" class="btn">Search</button>
+            <button id="create" type="button" class="btn">Create</button>
+            </div>
+            
+            <div id="message"></div>
+    </form>
+</section>

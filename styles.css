@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  padding: 0 24px;
+  background-color: #333;
+  color: hsl(0, 0%, 100%);
+}
+
+.footer {
+  background-color: #333;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  padding: 20px;
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+.stock-card {
+  background-color: hsl(0, 0%, 100%);
+  padding: 32px;
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+.stock-card_title {
+  color: hsl(220, 13%, 13%);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.form-group label {
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: hsl(219, 9%, 45%);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.form-group input {
+  padding: 14px 16px;
+  border: 2px solid hsl(223, 64%, 98%);
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: hsl(220, 13%, 13%);
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+.form-group input::placeholder {
+  color: hsl(220, 14%, 75%);
+}
+.form-group input:focus {
+  border-color: hsl(26, 100%, 55%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.form-check {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.form-check p {
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: hsl(219, 9%, 45%);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.form-check input[type=radio] {
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+.form-check label {
+  font-weight: 700;
+  color: hsl(220, 13%, 13%);
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn {
+  flex: 1;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(26, 100%, 55%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(255, 125, 26, 0.25);
+  transition: opacity 0.2s, transform 0.1s;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.btn:active {
+  transform: translateY(2px);
+}
+
+.invoices-container, .invoices-client-container {
+  padding: 20px;
+}
+.invoices-container .search-section, .invoices-client-container .search-section {
+  margin-bottom: 30px;
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+}
+.invoices-container .search-section form, .invoices-client-container .search-section form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.invoices-container .search-section form label, .invoices-client-container .search-section form label {
+  font-weight: bold;
+}
+.invoices-container .search-section form input, .invoices-client-container .search-section form input {
+  padding: 8px;
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.invoices-container .search-section form button, .invoices-client-container .search-section form button {
+  padding: 8px 15px;
+  cursor: pointer;
+  background-color: hsl(26, 100%, 55%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 4px;
+}
+.invoices-container .results-section table, .invoices-client-container .results-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.invoices-container .results-section table th, .invoices-container .results-section table td, .invoices-client-container .results-section table th, .invoices-client-container .results-section table td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+.invoices-container .results-section table th, .invoices-client-container .results-section table th {
+  background-color: #e9ecef;
+}
+.invoices-container .results-section .total-row, .invoices-client-container .results-section .total-row {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px;
+  background: #eee;
+  border-radius: 4px;
+}
+
+.user-card {
+  background-color: hsl(0, 0%, 100%);
+  padding: 32px;
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+.user-card_title {
+  color: hsl(220, 13%, 13%);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.form-group label {
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: hsl(219, 9%, 45%);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.form-group input, .form-group select {
+  padding: 14px 16px;
+  border: 2px solid hsl(223, 64%, 98%);
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: hsl(220, 13%, 13%);
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  background-color: hsl(0, 0%, 100%);
+}
+.form-group input::placeholder, .form-group select::placeholder {
+  color: hsl(220, 14%, 75%);
+}
+.form-group input:focus, .form-group select:focus {
+  border-color: hsl(26, 100%, 55%);
+  background-color: hsl(0, 0%, 100%);
+}
+.form-group select {
+  appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23ff7d1a' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  padding-right: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn {
+  flex: 1;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(26, 100%, 55%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(255, 125, 26, 0.25);
+  transition: opacity 0.2s, transform 0.1s;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.btn:active {
+  transform: translateY(2px);
+}
+
+/*# sourceMappingURL=styles.css.map */

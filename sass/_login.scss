@@ -1,0 +1,18 @@
+@use 'variables';
+
+.login-card {
+    background-color: variables.$White;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    margin: 80px auto;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+
+    &_title {
+        color: variables.$Very-dark-blue;
+        margin-bottom: 32px;
+        text-align: center;
+        font-size: 2rem;
+    }
+}

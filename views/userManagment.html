@@ -1,0 +1,54 @@
+<section class="user-card">
+    <h1 class="user-card_title">Create or Search product</h1>
+    <form id="manage-form" class="manage-form">
+            <div class="form-group">
+                <label for="userID">User ID</label>
+                <input type="text" id="userID" name="lpa_user_ID" placeholder='User ID' required>
+            </div>
+
+            <div class="form-group">
+                <label for="userName">User Name</label>
+                <input type="text" id="userName" name="lpa_user_username" placeholder='User Name' required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">password</label>
+                <input type="password" id="password" name="lpa_user_password" placeholder='password' required>
+            </div>
+
+            <div class="form-group">
+                <label for="userFirstName">User First Name</label>
+                <input type="text" id="userFirstName" name="lpa_user_firstname" placeholder='User First Name' required>
+            </div>
+
+            <div class="form-group">
+                <label for="userLastName">User Last Name</label>
+                <input type="text" id="userLastName" name="lpa_user_lastname" placeholder='User Last Name' required>
+            </div>
+
+            <div class="form-group">
+                <label for="userGroup">User Group</label>
+                <select id="userGroup" name="lpa_user_group">
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                </select>       
+            </div>
+                
+            <div class="form-group">
+                <label for="userStatus">User Status</label>
+                <select id="userStatus" name="lpa_user_status">
+                    <option value="1">Enabled</option>
+                    <option value="0">Disabled</option>
+                </select>
+            </div>
+
+            <div class="buttons">
+            <button id="save" type="button" class="btn">Save</button>
+            <button id="close" type="button" class="btn">Close</button>
+            <button id="find" type="button" class="btn">Find</button>
+            <button id="create" type="button" class="btn">Create</button>
+            </div>
+            
+            <div id="message"></div>
+    </form>
+</section>

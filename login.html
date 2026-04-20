@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body class="login-body">
+    <section class="login-card">
+        <h1 class="login-card_title">Login</h1>
+        <form id="login-form" class="login-form">
+            <div class="form-group">
+                <label for="userName">Username</label>
+                <input type="text" id="userName" name="lpa_user_username" placeholder="Username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="loginPass">Password</label>
+                <input type="password" id="loginPass" name="lpa_user_password" placeholder="Password" required>
+            </div>
+
+            <div class="buttons">
+                <button id="login-btn" type="submit" class="btn">Sign In</button>
+            </div>
+            <div id="login-message" class="message-container"></div>
+        </form>
+    </section>
+    <script src="login-renderer.js"></script>
+</body>
+</html>

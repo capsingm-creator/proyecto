@@ -1,0 +1,12 @@
+@use 'variables';
+
+.header{
+    //border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    padding: 0 24px;
+    background-color: variables.$Gray;
+    color: variables.$White;
+}
