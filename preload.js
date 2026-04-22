@@ -9,7 +9,7 @@ contextBridge.exposeInMainWorld('electronAPI', {
 
 contextBridge.exposeInMainWorld('apiAuth', {
     attemptLogin: async (credentials) => {
-        console.log(credentials);
+        console.log(credentials);   
         const response = await fetch('http://localhost/Proyectocamilo/api/login.php', {
             method: 'POST',
             headers: {
@@ -68,7 +68,7 @@ contextBridge.exposeInMainWorld('apiInvoice', {
 
     searchInvoices: async (formData) => {
         console.log(formData);
-        const response = await fetch('http://localhost/Proyecto%20camilo/api/search_invoice.php', {
+        const response = await fetch('http://localhost/Proyectocamilo/api/search_invoice.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -80,7 +80,7 @@ contextBridge.exposeInMainWorld('apiInvoice', {
 
     searchInvoicesClient:async (formData) => {
         console.log(formData);
-        const response = await fetch('http://localhost/Proyecto%20camilo/api/search_invoice_client.php', {
+        const response = await fetch('http://localhost/Proyectocamilo/api/search_invoice_client.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
